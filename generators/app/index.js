@@ -7,6 +7,7 @@ const resolveFiles = R.always([
     '.travis.yml',
     'src/hello.rs',
     'src/main.rs',
+    'Justfile',
     ['gitignore', '.gitignore'],
 ]);
 
