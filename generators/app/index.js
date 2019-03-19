@@ -16,7 +16,7 @@ function resolvePrompts() {
             type: 'input',
             name: 'name',
             message: 'name',
-            default: R.replace(/ /, '-')(this.appname),
+            default: R.replace(/ /g, '-')(this.appname),
         },
         {
             type: 'input',
