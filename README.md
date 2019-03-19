@@ -1,6 +1,6 @@
 # @specialblend/generator-rust
 
-[Yeoman](https://yeoman.io/) generator for Rust projects (supports crates and Docker services) with cargo, clippy and TravisCI
+[Yeoman](https://yeoman.io/) generator for Rust projects (crates and Docker microservice) with cargo, clippy, travis-ci and Justfile
 
 ### Installation
 
@@ -16,12 +16,12 @@
 
 ### Templates
 
-#### crate (default):
+#### crate (default): Rust crate
 `yo @specialblend/rust` or `yo @specialblend/rust:crate`
 - `main.rs`, `hello.rs` with unit tests
 - Preset TravisCI configuration (`.travis.yml`)
 
-#### docker:
+#### docker: Dockerized rust microservice
 `yo @specialblend/rust:docker`
 
 optional: `cargo install just`
