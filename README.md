@@ -20,6 +20,7 @@
 `yo @specialblend/rust` or `yo @specialblend/rust:crate`
 - `main.rs`, `hello.rs` with unit tests
 - Preset TravisCI configuration (`.travis.yml`)
+- Justfile with `just build`, `just run`, `just start`
 
 #### docker: Dockerized rust microservice
 `yo @specialblend/rust:docker`
