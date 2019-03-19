@@ -15,7 +15,7 @@ const resolvePrompts = (__this__) => [
         type: 'input',
         name: 'name',
         message: 'name',
-        default: R.replace(/ /, '_')(__this__.appname),
+        default: R.replace(/ /, '-')(__this__.appname),
     },
     {
         type: 'input',
