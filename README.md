@@ -20,3 +20,12 @@
 `yo @specialblend/rust` or `yo @specialblend/rust:crate`
 - `main.rs`, `hello.rs` with unit tests
 - Preset TravisCI configuration (`.travis.yml`)
+
+#### docker:
+`yo @specialblend/rust:docker`
+
+optional: `cargo install just`
+- `main.rs`, `hello.rs` with unit tests
+- Preset `Dockerfile` and `docker-compose.yml`
+- Preset TravisCI configuration (`.travis.yml`)
+- Justfile with `just build`, `just run`, `just start`
