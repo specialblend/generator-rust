@@ -1,0 +1,36 @@
+{
+  "name": "@specialblend/generator-rust",
+  "version": "0.0.8",
+  "description": "Yeoman generator for Rust projects with cargo, clippy, and travis-ci",
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/specialblend/generator-rust.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "files": [
+    "src",
+    "generators"
+  ],
+  "author": "cj@specialblend.net",
+  "license": "ISC",
+  "devDependencies": {
+    "@specialblend/eslint-config": "0.0.0",
+    "eslint": "^5.15.3",
+    "jest": "^24.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/specialblend/generator-rust/issues"
+  },
+  "homepage": "https://github.com/specialblend/generator-rust#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "ramda": "^0.26.1",
+    "yeoman-generator": "^3.2.0"
+  }
+}
