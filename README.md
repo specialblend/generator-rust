@@ -1,6 +1,6 @@
 # @specialblend/generator-rust
 
-[Yeoman](https://yeoman.io/) generator for Rust projects (supports crates and, soon, Docker services) with cargo, clippy and TravisCI
+[Yeoman](https://yeoman.io/) generator for Rust projects (supports crates and Docker services) with cargo, clippy and TravisCI
 
 ### Installation
 
