@@ -1,0 +1,8 @@
+test:
+    cargo test
+build:
+    cargo build && docker-compose build
+run:
+    docker-compose up
+start:
+    just build && just run
