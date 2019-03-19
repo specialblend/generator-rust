@@ -10,20 +10,22 @@ const resolveFiles = R.always([
     ['gitignore', '.gitignore'],
 ]);
 
-const resolvePrompts = (__this__) => [
-    {
-        type: 'input',
-        name: 'name',
-        message: 'name',
-        default: R.replace(/ /, '-')(__this__.appname),
-    },
-    {
-        type: 'input',
-        name: 'author',
-        message: 'author',
-        default: '',
-        store: true,
-    },
-];
+function resolvePrompts() {
+    return [
+        {
+            type: 'input',
+            name: 'name',
+            message: 'name',
+            default: R.replace(/ /, '-')(this.appname),
+        },
+        {
+            type: 'input',
+            name: 'author',
+            message: 'author',
+            default: '',
+            store: true,
+        },
+    ];
+}
 
 module.exports = generator(path.join(__dirname, 'template'), resolveFiles, resolvePrompts);

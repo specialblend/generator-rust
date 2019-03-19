@@ -12,7 +12,7 @@ module.exports = (root, resolveFiles = R.always([]), resolvePrompts = R.always([
         }
         async prompting() {
             if (R.is(Function, resolvePrompts)) {
-                const prompts = resolvePrompts(this);
+                const prompts = resolvePrompts.bind(this)();
                 if (R.is(Array, prompts)) {
                     if (!R.isEmpty(prompts)) {
                         console.debug(`found (${prompts.length}) prompts`);
